@@ -1,0 +1,13 @@
+[package]
+name = "secure_update_host"
+version = "0.1.0"
+edition = "2018"
+
+[dependencies]
+proto = { path = "../proto" }
+optee-teec = { path = "../../../optee-teec" }
+base64 = "0.22"
+ 
+
+[profile.release]
+lto = true

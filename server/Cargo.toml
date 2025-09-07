@@ -1,0 +1,10 @@
+[package]
+name = "secure_update_server"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+ed25519-dalek = { version = "1", features = ["rand_core"] }
+rand = "0.8"
+rand_core = "0.6"
+base64 = "0.22"

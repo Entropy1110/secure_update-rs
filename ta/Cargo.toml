@@ -1,0 +1,18 @@
+[package]
+name = "ta"
+version = "0.1.0"
+edition = "2018"
+
+[dependencies]
+proto = { path = "../proto" }
+optee-utee-sys = { path = "../../../optee-utee/optee-utee-sys" }
+optee-utee = { path = "../../../optee-utee" }
+
+[build-dependencies]
+proto = { path = "../proto" }
+optee-utee-build = { path = "../../../optee-utee-build" }
+
+[profile.release]
+panic = "abort"
+lto = true
+opt-level = 1
